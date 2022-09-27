@@ -4,10 +4,11 @@ import heroBg from '../assets/hero.jpg'
 const Hero = () => {
   return (
     <section className='w-full  bg-center bg-cover'>
+      
       <div className='relative w-full h-[50vh] bg-gradient-to-r from-dark to-san-mario flex justify-center items-center'>
         <img src={heroBg.src} alt='bg' className='absolute w-full h-full object-cover object-center mix-blend-overlay opacity-50' />
         <div className='container mx-auto text-center flex flex-col justify-end'>
-          <h1 className='font-inter text-foam text-6xl font-semibold pt-24'>Marlena Group of Companies LTD</h1>
+          <h1 className='relative font-inter text-white text-6xl font-semibold pt-24 '>Marlena Group of Companies LTD</h1>
         </div>
       </div>
 
