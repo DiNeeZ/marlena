@@ -1,25 +1,14 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import logoPic from '../assets/logo.svg'
+import Logo from './Logo'
+import Nav from './Nav'
+import { MENU_ITEMS } from '../constants'
 
-const Header = () => {
-  return (
-    <header className='fixed w-full bg-catskill shadow-lg z-10'>
-      <div className='container'>
-        <Link href={'/'}>
-          <a>
-            <div className='flex items-end gap-4 font-lateef py-4 text-astral'>
-              <Image src={logoPic} height={60} width={60} alt='logo' />
-              <div className='flex flex-col gap-2'>
-                <p className='uppercase text-6xl font-bold leading-6 drop-shadow-xl'>Marlena</p>
-                <p className='uppercase text-2xl text-caribbean leading-4 drop-shadow-sm tracking-wider'>Group of Companies</p>
-              </div>
-            </div>
-          </a>
-        </Link>
-      </div>
-    </header >
-  )
-}
+const Header = () => (
+  <header className='fixed w-full bg-slate-50 shadow-lg z-10'>
+    <div className='container flex items-center justify-between'>
+      <Logo />
+      <Nav items={MENU_ITEMS} />
+    </div>
+  </header >
+)
 
 export default Header

@@ -13,7 +13,7 @@ const Hero = () => {
       </div>
 
       <div className='container'>
-        <div className='relative p-12 -mt-8 mb-8 bg-catskill rounded-md shadow-lg text-center'>
+        <div className='relative p-12 -mt-8 mb-8 bg-slate-50 rounded-md shadow-lg text-center'>
           <p className='mb-4'>
             The main activity of the company is carried out on the territory of the Special Economic Zone of the Reni
             Commercial Sea Port, in the Odessa region, Ukraine, where a subsidiary of the private enterprise ReniLes operates,
@@ -28,7 +28,7 @@ const Hero = () => {
           </p>
         </div>
         <div>
-          <h2 className='text-2xl text-astral font-bold mb-4'>Why choose us?</h2>
+          <h2 className='text-2xl text-violet-700 font-bold mb-4'>Why choose us?</h2>
           <p>
             In the global mineral fertilizer market, our company went from a trader to an experienced and reliable logistics operator.
           </p>
