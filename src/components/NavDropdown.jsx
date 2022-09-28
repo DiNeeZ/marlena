@@ -1,11 +1,15 @@
+
 const NavDropdown = ({ items }) => {
   return (
-    <ul className='absolute bg-slate-100 shadow-md top-5 p-2 rounded-md'>
+    <ul className='tablet:absolute tablet:bg-slate-100/95 tablet:shadow-xl tablet:top-5 tablet:mt-0 
+    tablet:space-y-0 bg-transparent mt-4 p-2 rounded-md space-y-4'>
       {
         items.map(item => {
           return (
-            <li key={`dropdown-item-${item.text}`} tabIndex={0} className='text-[0.8rem] text-neutral-900 
-            whitespace-nowrap outline-none focus:text-violet-700 hover:text-violet-700 ease-in duration-150'>
+            <li
+              key={`dropdown-item-${item.text}`}
+              className='tablet:text-[0.8rem] tablet:px-2 tablet:py-2 text-xl text-neutral-900 whitespace-nowrap p-0 rounded
+              outline-none hover:text-white hover:bg-slate-500 ease-in duration-150'>
               {item.text}
             </li>
           )

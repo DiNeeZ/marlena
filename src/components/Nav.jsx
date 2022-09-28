@@ -1,16 +1,15 @@
 import React from 'react'
 import NavItem from './NavItem'
-import NavDropdown from './NavDropdown'
 
-const Nav = ({ items }) => {
+const Nav = ({ items, ...otherProps }) => {
+
   return (
     <div>
-      <ul className='flex items-center space-x-4 font-medium uppercase '>
+      <ul className={`${otherProps.className} tablet:space-x-4 tablet:space-y-0 items-center 
+      space-x-0 space-y-4 font-medium uppercase`}>
         {
           items.map(item => (
-            <NavItem key={`nav-item-${item.text}`} item={item}>
-              {item.dropdown && <NavDropdown items={item.dropdown} />}
-            </NavItem>
+            <NavItem key={`nav-item-${item.text}`} item={item} />
           ))
         }
       </ul>
