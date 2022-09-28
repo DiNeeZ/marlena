@@ -5,7 +5,7 @@ import logoPic from '../assets/logo.svg'
 const Header = () => {
   return (
     <header className='fixed w-full bg-catskill shadow-lg z-10'>
-      <div className='container mx-auto'>
+      <div className='container'>
         <Link href={'/'}>
           <a>
             <div className='flex items-end gap-4 font-lateef py-4 text-astral'>

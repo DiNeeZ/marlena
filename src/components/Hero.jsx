@@ -7,12 +7,12 @@ const Hero = () => {
       
       <div className='relative w-full h-[50vh] bg-gradient-to-r from-dark to-san-mario flex justify-center items-center'>
         <img src={heroBg.src} alt='bg' className='absolute w-full h-full object-cover object-center mix-blend-overlay opacity-50' />
-        <div className='container mx-auto text-center flex flex-col justify-end'>
+        <div className='container text-center flex flex-col justify-end'>
           <h1 className='relative font-inter text-white text-6xl font-semibold pt-24 '>Marlena Group of Companies LTD</h1>
         </div>
       </div>
 
-      <div className='container mx-auto'>
+      <div className='container'>
         <div className='relative p-12 -mt-8 mb-8 bg-catskill rounded-md shadow-lg text-center'>
           <p className='mb-4'>
             The main activity of the company is carried out on the territory of the Special Economic Zone of the Reni
