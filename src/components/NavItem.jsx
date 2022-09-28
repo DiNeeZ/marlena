@@ -11,10 +11,10 @@ const NavItem = ({ item }) => {
 
   return (
     <li
-      onFocus={handleFocus}
-      onBlur={handleBlur}
-      onMouseEnter={handleFocus}
-      onMouseLeave={handleBlur}
+      // onFocus={handleFocus}
+      // onBlur={handleBlur}
+      // onMouseEnter={handleFocus}
+      // onMouseLeave={handleBlur}
       tabIndex={0}
       className={`${isRelative} nav-item cursor-pointer hover:text-violet-700 
       focus:text-violet-700 outline-none ease-in-out duration-150`}>
@@ -22,7 +22,7 @@ const NavItem = ({ item }) => {
         <span>{item.text}</span>
         {item.dropdown && <HiChevronDown className='group-hover:rotate-180 ease-in-out duration-300'/>}
       </div>
-      {(item.dropdown && showDropdown) && <NavDropdown items={item.dropdown} />}
+      {item.dropdown && <NavDropdown items={item.dropdown} />}
     </li>
   )
 }

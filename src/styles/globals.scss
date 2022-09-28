@@ -7,11 +7,26 @@
     @apply mobile:max-w-[600px] tablet:max-w-[900px] desktop:max-w-[1200px];
   }
 
+  .nav-dropdown {
+    display: none;
+  }
+
   .nav-item {
     &:focus,
     &:active {
       svg {
         transform: rotate(180deg);
+      }
+
+      .nav-dropdown {
+        display: block;
+      }
+    }
+
+    &:focus-within,
+    &:hover {
+      .nav-dropdown {
+        display: block;
       }
     }
   }
