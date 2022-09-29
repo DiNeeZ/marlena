@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { HiOutlineMenuAlt3 } from 'react-icons/hi'
-import { RiCloseFill } from 'react-icons/ri'
+import { CgClose } from 'react-icons/cg'
 import ContactInfo from './ContactInfo'
 import Nav from './Nav'
 import { MENU_ITEMS } from '../constants'
@@ -22,9 +22,9 @@ const MobileMenu = () => {
           'fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-150' :
           'fixed left-[-100%] top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-150'
         }>
-          <div className='absolute top-8 right-8'>
+          <div className='absolute top-2 right-2'>
             <button onClick={() => setShowMenu(false)}>
-              <RiCloseFill className='w-12 h-12' />
+              <CgClose className='w-12 h-12' />
             </button>
           </div>
 
