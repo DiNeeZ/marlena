@@ -3,26 +3,50 @@
 @tailwind utilities;
 
 @layer components {
-  .container {
-    @apply mobile:max-w-[600px] tablet:max-w-[900px] desktop:max-w-[1200px];
+  #__next {
+    @apply min-h-screen flex flex-col justify-between;
   }
 
   .nav-dropdown {
-    display: none;
+    @apply hidden;
   }
 
   .nav-item {
+
     &:focus,
     &:active,
     &:hover,
     &:focus-within {
       svg {
-        transform: rotate(180deg);
+        @apply rotate-180;
       }
 
       .nav-dropdown {
-        display: block;
+        @apply block;
       }
+    }
+  }
+
+  .service {
+    &::before {
+      content: '';
+      position: absolute;
+      border-width: 2rem;
+      border-style: solid;
+      border-color: #f8fafc #f8fafc rgba(1, 1, 1, 0.4) rgba(0, 0, 0, 0.4);
+      border-bottom-left-radius: 10px;
+      right: -4rem;
+      top: -4rem;
+      opacity: 0;
+      transition: right 0.3s ease-out,
+        top 0.3s ease-out,
+        opacity 0.35s ease-out;
+    }
+
+    &:hover::before {
+      top: 0;
+      right: 0;
+      opacity: 1;
     }
   }
 }

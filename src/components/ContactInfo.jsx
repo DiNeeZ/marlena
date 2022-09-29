@@ -1,5 +1,4 @@
-import { HiMail } from 'react-icons/hi'
-import { BsFillTelephoneFill } from 'react-icons/bs'
+import { FiMail, FiPhone } from 'react-icons/fi'
 
 const ContactInfo = ({ ...otherProps }) => {
 
@@ -11,7 +10,7 @@ const ContactInfo = ({ ...otherProps }) => {
           className='flex justify-between leading-3 items-center space-x-4 outline-none
           focus:text-violet-700'
           href='tel:380482345355'>
-          <BsFillTelephoneFill />
+          <FiPhone />
           <span>+38 (0482) 345 355</span>
         </a>
       </li>
@@ -19,7 +18,7 @@ const ContactInfo = ({ ...otherProps }) => {
         <a
           className='flex justify-between leading-3 items-center space-x-4 outline-none focus:text-violet-700'
           href='mailto:marlena@renome-i.net'>
-          <HiMail className='w-4 h-4' />
+          <FiMail />
           <span>marlena@renome-i.net</span>
         </a>
       </li>

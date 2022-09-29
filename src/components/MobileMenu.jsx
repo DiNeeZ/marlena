@@ -24,13 +24,13 @@ const MobileMenu = () => {
         }>
           <div className='absolute top-8 right-8'>
             <button onClick={() => setShowMenu(false)}>
-              <RiCloseFill className='w-8 h-8' />
+              <RiCloseFill className='w-12 h-12' />
             </button>
           </div>
 
           <div>
             <div className='py-8 max-w-[50%]'>
-              <ContactInfo className='absolute top-8 left-8' />
+              <ContactInfo className='absolute top-24 left-8' />
             </div>
             <Nav className='pt-24' items={MENU_ITEMS} />
           </div>

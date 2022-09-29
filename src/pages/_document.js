@@ -10,8 +10,8 @@ export default function Document() {
         <link href="https://fonts.googleapis.com/css2?family=Lateef:wght@300;400;500;700&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet" />
       </Head>
-      <body className='font-roboto text-neutral-900 min-h-screen'>
-        <Main className='flex flex-col' />
+      <body className='font-roboto bg-slate-50 text-neutral-900'>
+        <Main/>
         <NextScript />
       </body>
     </Html>
