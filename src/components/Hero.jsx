@@ -2,13 +2,13 @@ import heroBg from '../assets/hero.jpg'
 
 const Hero = () => {
   return (
-    <section className='w-full  bg-center bg-cover mb-16'>
+    <section className='w-full bg-center bg-cover mb-16'>
 
       <div style={{ backgroundImage: `url(${heroBg.src})` }}
         className='relative w-full h-[70vh] flex justify-center items-center bg-cover bg-no-repeat bg-center'>
         <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-r from-green-700 to-violet-700 opacity-50' />
         <div className='container text-center flex flex-col justify-end'>
-          <h1 className='relative text-4xl font-inter text-white mobile:text-5xl tablet:text-6xl font-semibold pt-24 drop-shadow-lg 
+          <h1 className='relative text-4xl font-inter text-white mobile:text-5xl tablet:text-6xl font-semibold drop-shadow-lg 
           shadow-black'>
             Marlena Group of Companies LTD
           </h1>

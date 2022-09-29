@@ -24,7 +24,7 @@ const MobileMenu = () => {
         }>
           <div className='absolute top-2 right-2'>
             <button onClick={() => setShowMenu(false)}>
-              <CgClose className='w-12 h-12' />
+              <CgClose className='w-12 h-12 p-3' />
             </button>
           </div>
 
