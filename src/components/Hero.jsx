@@ -1,19 +1,22 @@
-import Image from 'next/image'
 import heroBg from '../assets/hero.jpg'
 
 const Hero = () => {
   return (
     <section className='w-full  bg-center bg-cover'>
-      
-      <div className='relative w-full h-[50vh] bg-gradient-to-r from-dark to-san-mario flex justify-center items-center'>
-        <img src={heroBg.src} alt='bg' className='absolute w-full h-full object-cover object-center mix-blend-overlay opacity-50' />
+
+      <div style={{ backgroundImage: `url(${heroBg.src})` }}
+        className='relative w-full h-[50vh] flex justify-center items-center bg-cover bg-no-repeat bg-center'>
+        <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-r from-green-700 to-violet-700 opacity-50' />
         <div className='container text-center flex flex-col justify-end'>
-          <h1 className='relative font-inter text-white text-6xl font-semibold pt-24 '>Marlena Group of Companies LTD</h1>
+          <h1 className='relative text-4xl font-inter text-white mobile:text-5xl tablet:text-6xl font-semibold pt-24 drop-shadow-lg 
+          shadow-black '>
+            Marlena Group of Companies LTD
+          </h1>
         </div>
       </div>
 
       <div className='container'>
-        <div className='relative p-12 -mt-8 mb-8 bg-slate-50 rounded-md shadow-lg text-center'>
+        <div className='relative p-4 tablet:p-6 laptop:p-12 -mt-8 mb-8 bg-slate-50 rounded-md shadow-lg text-center'>
           <p className='mb-4'>
             The main activity of the company is carried out on the territory of the Special Economic Zone of the Reni
             Commercial Sea Port, in the Odessa region, Ukraine, where a subsidiary of the private enterprise ReniLes operates,

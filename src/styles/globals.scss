@@ -13,18 +13,13 @@
 
   .nav-item {
     &:focus,
-    &:active {
+    &:active,
+    &:hover,
+    &:focus-within {
       svg {
         transform: rotate(180deg);
       }
 
-      .nav-dropdown {
-        display: block;
-      }
-    }
-
-    &:focus-within,
-    &:hover {
       .nav-dropdown {
         display: block;
       }

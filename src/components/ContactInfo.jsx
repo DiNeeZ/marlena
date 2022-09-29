@@ -4,10 +4,12 @@ import { BsFillTelephoneFill } from 'react-icons/bs'
 const ContactInfo = ({ ...otherProps }) => {
 
   return (
-    <ul className={`${otherProps.className} text-[12px] flex-col text-sm items-end space-y-2`}>
+    <ul className={`${otherProps.className} space-y-4 tablet:text-[12px] laptop:text-base flex-col 
+      items-end tablet:space-y-1 laptop:space-y-2`}>
       <li className='w-full hover:text-violet-700  ease-in duration-150'>
         <a
-          className='flex justify-between leading-3 items-center space-x-4 outline-none focus:text-violet-700'
+          className='flex justify-between leading-3 items-center space-x-4 outline-none
+          focus:text-violet-700'
           href='tel:380482345355'>
           <BsFillTelephoneFill />
           <span>+38 (0482) 345 355</span>
