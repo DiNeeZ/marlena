@@ -28,7 +28,7 @@ const Header = () => {
   return (
     <header
       className={`${visible ? 'visible opacity-100 ease-out duration-500' : 'invisible opacity-0 ease-out duration-500'} 
-      fixed w-full backdrop-blur-lg bg-white/75 shadow-lg z-10`}>
+      fixed w-full bg-slate-50 shadow-lg z-10`}>
       <div className='container flex items-center justify-between'>
         <Logo />
         <Nav className='hidden tablet:flex' items={MENU_ITEMS} />

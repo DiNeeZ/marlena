@@ -3,9 +3,9 @@ import { SERVICES_ITEMS } from '../constants'
 
 const Services = () => {
   return (
-    <setion className="mb-16">
+    <setion className="py-32">
       <div className="container">
-        <div className='uppercase text-center mb-12'>
+        <div className='uppercase text-center mb-8'>
           <p className='font-medium text-slate-700'>What do we offer</p>
           <h2 className='text-violet-700 text-3xl font-semibold tracking-widest'>Our services</h2>
         </div>

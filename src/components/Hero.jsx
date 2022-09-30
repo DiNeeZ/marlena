@@ -2,8 +2,7 @@ import heroBg from '../assets/hero.jpg'
 
 const Hero = () => {
   return (
-    <section className='w-full bg-center bg-cover mb-16'>
-
+    <section className='w-full bg-slate-200/50 bg-center bg-cover shadow-md pb-16'>
       <div style={{ backgroundImage: `url(${heroBg.src})` }}
         className='relative w-full h-[70vh] flex justify-center items-center bg-cover bg-no-repeat bg-center'>
         <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-r from-green-700 to-violet-700 opacity-50' />
