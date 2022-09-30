@@ -4,7 +4,7 @@ import oilPic from '../assets/oil.jpg'
 
 const Divisions = () => {
   return (
-    <section className='relative py-32 bg-slate-200/50 shadow-md overflow-hidden'>
+    <section className='relative py-8 tablet:py-16 bg-slate-200/50 shadow-md overflow-hidden'>
       <div class=" absolute top-0 right-0 w-[150%] laptop:w-[100%] h-full overflow-hidden">
         <div class="w-full h-full skew-x-[60deg] bg-violet-300/50 
         translate-x-[350%] mobile:translate-x-[200%] laptop:translate-x-[100%] " />
