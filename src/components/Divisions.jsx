@@ -5,14 +5,14 @@ import oilPic from '../assets/oil.jpg'
 const Divisions = () => {
   return (
     <section className='relative py-8 tablet:py-16 bg-slate-200/50 shadow-md overflow-hidden'>
-      <div class=" absolute top-0 right-0 w-[150%] laptop:w-[100%] h-full overflow-hidden">
-        <div class="w-full h-full skew-x-[60deg] bg-violet-300/50 
-        translate-x-[350%] mobile:translate-x-[200%] laptop:translate-x-[100%] " />
+      <div className='absolute top-0 right-0 w-[150%] laptop:w-[100%] h-full overflow-hidden'>
+        <div className='w-full h-full skew-x-[60deg] bg-violet-300/50 
+        translate-x-[350%] mobile:translate-x-[200%] laptop:translate-x-[100%]' />
       </div>
-      <div class=" absolute top-0 left-0 w-[200%] laptop:w-[100%] h-full overflow-hidden">
+      <div className='absolute top-0 left-0 w-[200%] laptop:w-[100%] h-full overflow-hidden'>
         <div
-          class="w-full h-full skew-x-[60deg] bg-violet-300/50
-        -translate-x-[280%] mobile:-translate-x-[200%] laptop:-translate-x-[100%]"
+          className='w-full h-full skew-x-[60deg] bg-violet-300/50
+        -translate-x-[280%] mobile:-translate-x-[200%] laptop:-translate-x-[100%]'
         />
       </div>
       <div className="container relative z-10">
@@ -25,7 +25,7 @@ const Divisions = () => {
         <div className='space-y-12 mb-12'>
           <div className='flex flex-col laptop:flex-row gap-12'>
             <div className='basis-auto flex rounded overflow-hidden shadow shadow-slate-400'>
-              <Image src={bulkPic} />
+              <Image src={bulkPic} alt='bulk' />
             </div>
             <div className='grow-1 shrink-0 basis-[60%] space-y-4'>
               <p>
@@ -48,7 +48,7 @@ const Divisions = () => {
           </div>
           <div className='flex flex-col laptop:flex-row-reverse gap-12'>
             <div className='basis-auto flex rounded overflow-hidden shadow shadow-slate-400'>
-              <Image src={oilPic} />
+              <Image src={oilPic} alt='oil'/>
             </div>
             <div className='grow-1 shrink-0 basis-[60%] space-y-4'>
               <p>
