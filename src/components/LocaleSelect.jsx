@@ -2,7 +2,7 @@ import Select from 'react-select'
 import { useRouter } from 'next/router'
 import { TbLanguage } from 'react-icons/tb'
 
-const LocaleSelect = () => {
+const LocaleSelect = ({ ...otherProps }) => {
   const router = useRouter()
 
   const options = router.locales.map(locale => ({
@@ -16,8 +16,13 @@ const LocaleSelect = () => {
   }
 
   const colorStyles = {
+    valueContainer: base => ({
+      ...base,
+      padding: 0
+    }),
     control: base => ({
       ...base,
+      padding: 0,
       fontSize: '0.875rem',
       fontWeight: '700',
       backgroundColor: 'transparent',
@@ -48,7 +53,6 @@ const LocaleSelect = () => {
       color: isFocused ? '#f8fafc' : '#171717',
       '&:hover': {
         ...base[':hover'],
-        // backgroundColor: '#1c323b',
       }
     }),
     menu: (base) => ({
@@ -66,8 +70,9 @@ const LocaleSelect = () => {
   }
 
   return (
-    <div className='flex items-center cursor-pointer text-neutral-600 hover:text-violet-700 focus-within:text-violet-700'>
-      <TbLanguage className='w-6 h-6 text-neutral-600 text-inherit' />
+    <div className={`${otherProps.className} flex items-center cursor-pointer text-neutral-600 
+    hover:text-violet-700 focus-within:text-violet-700`}>
+      <TbLanguage className='w-4 h-4 text-neutral-600 text-inherit' />
       <Select
         options={options}
         styles={colorStyles}

@@ -33,9 +33,9 @@ const Header = () => {
       <div className='container flex items-center justify-between'>
         <Logo />
         <Nav className='hidden tablet:flex' items={MENU_ITEMS} />
-        <div className='flex items-start gap-4'>
-          <ContactInfo className='hidden tablet:flex' />
-          <LocaleSelect />
+        <div className='flex flex-col items-center tablet:flex-row tablet:gap-2 laptop:gap-6'>
+          <ContactInfo className='hidden tablet:flex tablet:flex-row laptop:flex-col' />
+          <LocaleSelect className='hidden tablet:flex laptop:-mt-6' />
         </div>
         <MobileMenu />
       </div>

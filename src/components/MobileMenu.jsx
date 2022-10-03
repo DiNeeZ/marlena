@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { HiOutlineMenuAlt3 } from 'react-icons/hi'
 import { CgClose } from 'react-icons/cg'
 import ContactInfo from './ContactInfo'
+import LocaleSelect from './LocaleSelect'
 import Nav from './Nav'
 import { MENU_ITEMS } from '../constants'
 
@@ -30,7 +31,10 @@ const MobileMenu = () => {
 
           <div>
             <div className='py-8 max-w-[50%]'>
-              <ContactInfo className='absolute top-24 left-8' />
+              <div className='absolute top-10 left-8 flex flex-col items-end space-y-2'>
+                <LocaleSelect className='mb-2' />
+                <ContactInfo />
+              </div>
             </div>
             <Nav className='pt-24' items={MENU_ITEMS} />
           </div>
