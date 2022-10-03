@@ -4,6 +4,7 @@ import Nav from './Nav'
 import MobileMenu from './MobileMenu'
 import ContactInfo from './ContactInfo'
 import { MENU_ITEMS } from '../constants'
+import LocaleSelect from './LocaleSelect'
 
 const Header = () => {
   const [visible, setVisible] = useState(true)
@@ -32,7 +33,10 @@ const Header = () => {
       <div className='container flex items-center justify-between'>
         <Logo />
         <Nav className='hidden tablet:flex' items={MENU_ITEMS} />
-        <ContactInfo className='hidden tablet:flex' />
+        <div className='flex items-start gap-4'>
+          <ContactInfo className='hidden tablet:flex' />
+          <LocaleSelect />
+        </div>
         <MobileMenu />
       </div>
     </header >

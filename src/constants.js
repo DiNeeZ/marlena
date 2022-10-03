@@ -11,39 +11,39 @@ const storageIcon = <FaWarehouse
   text-green-700  laptop:group-hover:text-slate-50 duration-300 ease-in-out' />
 
 export const MENU_ITEMS = [
-  { text: 'Home' },
-  { text: 'About Us' },
+  { key: 'home' },
+  { key: 'about' },
   {
-    text: 'Services',
+    key: 'services',
     dropdown: [
-      { text: 'Port Transshipment' },
-      { text: 'Logistics' },
-      { text: 'Storage' },
+      { key: 'transshipment' },
+      { key: 'logistics' },
+      { key: 'storage' },
     ]
   },
-  { text: 'Gallery' },
-  { text: 'Contact Us' }
+  { key: 'gallery' },
+  { key: 'contacts' }
 ]
 
 export const SERVICES_ITEMS = [
   {
     id: 'services-1',
-    title: 'Port transshipment',
-    descr: 'The only dedicated terminal',
+    key: 'transshipment',
+    descr: 'transshipmentDescr',
     link: 'services/port-transshipment',
     icon: shippingIcon
   },
   {
     id: 'services-2',
-    title: 'Logistics',
-    descr: 'Rail transport and forwarding',
+    key: 'logistics',
+    descr: 'logisticsDescr',
     link: '/services/logistics/',
     icon: logisticsIcon
   },
   {
     id: 'services-3',
-    title: 'Storage',
-    descr: 'Total warehouse area',
+    key: 'storage',
+    descr: 'storageDescr',
     link: '/services/storage/',
     icon: storageIcon
   }

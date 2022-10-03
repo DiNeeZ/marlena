@@ -1,16 +1,19 @@
+import useTranslation from 'next-translate/useTranslation'
 import { FiMail, FiPhone } from 'react-icons/fi'
 import { FaFacebookF } from 'react-icons/fa'
 
 const Footer = () => {
+  const { t } = useTranslation('common')
+
   return (
     <footer className='bg-slate-50'>
       <div className="container py-8">
         <address className='flex flex-wrap items-center justify-between not-italic space-y-4'>
           <div className='flex flex-col space-y-2'>
-            <h3 className='uppercase font-medium'>Contact us</h3>
+            <h3 className='uppercase font-medium'>{t('contacts')}</h3>
             <div className='flex flex-col mobile:flex-row space-y-4 mobile:space-y-0 mobile:space-x-4'>
-              <span>65005, Ukraine, Odessa, <br />
-                st. Stepovaya, 18/20</span>
+              <span>{t('address1')}, <br />
+              {t('address2')}</span>
               <div>
                 <span className='flex flex-row-reverse mobile:flex-row items-center justify-between gap-4 hover:text-violet-700 
             focus-within:text-violet-700 ease-out duration-150'>

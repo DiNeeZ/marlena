@@ -1,6 +1,8 @@
 import heroBg from '../assets/hero.jpg'
+import useTranslation from 'next-translate/useTranslation'
 
 const Hero = () => {
+  const { t } = useTranslation('common')
   return (
     <section className='w-full bg-slate-200/50 bg-center bg-cover shadow-md pb-8 tablet:pb-16'>
       <div style={{ backgroundImage: `url(${heroBg.src})` }}
@@ -16,26 +18,19 @@ const Hero = () => {
       <div className='container'>
         <div className='relative p-4 tablet:p-6 laptop:p-12 -mt-28 mb-8 bg-slate-50 rounded-md shadow-lg text-center'>
           <p className='mb-4'>
-            The main activity of the company is carried out on the territory of the Special Economic Zone of the Reni
-            Commercial Sea Port, in the Odessa region, Ukraine, where a subsidiary of the private enterprise ReniLes operates,
-            which provides freight forwarding services for the transshipment of mineral fertilizers, liquefied gases and liquid
-            chemical products in the commercial sea port Reni.
+            {t('heroP1')}
           </p>
           <p>
-            The company has a subsidiary company “ReniLis”, which provides freight forwarding services for
-            the transshipment of liquefied gases, liquid chemical products and mineral fertilizers. The favorable geographical location
-            of the port at the mouth of the Danube River allows acceptance and cargo handling for both river vessels and barges, as well
-            as sea vessels.
+          {t('heroP2')}
           </p>
         </div>
         <div className='text-center'>
-          <h2 className='text-2xl text-violet-700 font-bold mb-4'>Why choose us?</h2>
+          <h2 className='text-2xl text-violet-700 font-bold mb-4'>{t('heroH3')}?</h2>
           <p>
-            In the global mineral fertilizer market, our company went from a trader to an experienced and reliable logistics operator.
+            {t('heroWhy')}
           </p>
         </div>
       </div>
-      {/* Hero */}
     </section>
   )
 }
