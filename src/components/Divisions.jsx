@@ -4,7 +4,6 @@ import oilPic from '../assets/oil.jpg'
 import useTranslation from 'next-translate/useTranslation'
 
 const Divisions = () => {
-  const str = 'To carry out transport and forwarding activities in the port, there are two main divisions'
   const { lang, t } = useTranslation('common')
 
   const renderTitle = (string) => {
@@ -23,8 +22,6 @@ const Divisions = () => {
       </h2>
     )
   }
-
-  console.log()
 
   return (
     <section className='relative py-8 tablet:py-16 bg-slate-200/50 shadow-md overflow-hidden'>

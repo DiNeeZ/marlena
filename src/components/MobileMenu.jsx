@@ -28,7 +28,6 @@ const MobileMenu = () => {
               <CgClose className='w-12 h-12 p-3' />
             </button>
           </div>
-
           <div>
             <div className='py-8 max-w-[50%]'>
               <div className='absolute top-10 left-8 flex flex-col items-end space-y-2'>

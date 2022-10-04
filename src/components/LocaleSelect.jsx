@@ -42,19 +42,24 @@ const LocaleSelect = ({ ...otherProps }) => {
       ...base,
       display: 'none',
     }),
-    option: (base, { isFocused }) => ({
-      ...base,
-      fontSize: '0.875rem',
-      fontWeight: '500',
-      textAlign: 'center',
-      backgroundColor: isFocused ? '#64748b' : 'transparent',
-      padding: 4,
-      cursor: 'pointer',
-      color: isFocused ? '#f8fafc' : '#171717',
-      '&:hover': {
-        ...base[':hover'],
-      }
-    }),
+    option: (base, { isSelected, isFocused }) => {
+      console.log(base)
+      return ({
+        ...base,
+        fontSize: '0.875rem',
+        fontWeight: '500',
+        textAlign: 'center',
+        backgroundColor: isFocused ? '#64748b' : 'transparent',
+        padding: 4,
+        cursor: 'pointer',
+        color: isSelected ? '#6d28d9' : (isFocused ? '#f8fafc' : '#171717'),
+        fontWeight: isSelected ? '700' : '400',
+        
+        '&:hover': {
+          ...base[':hover'],
+        }
+      })
+    },
     menu: (base) => ({
       ...base,
       width: '3rem'

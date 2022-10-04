@@ -48,3 +48,15 @@ export const SERVICES_ITEMS = [
     icon: storageIcon
   }
 ]
+
+export const ABOUT_TERMINAL = [
+  'aboutTerminal1',
+  'aboutTerminal2',
+  'aboutTerminal3',
+  'aboutTerminal4',
+  'aboutTerminal5',
+  'aboutTerminal6',
+  'aboutTerminal7',
+  'aboutTerminal8',
+  'aboutTerminal9'
+]
